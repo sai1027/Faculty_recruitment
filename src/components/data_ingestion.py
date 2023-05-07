@@ -9,8 +9,7 @@ from src.components.data_transformation import DataTransformationConfig
 from src.components.data_transformation import DataTransformation
 
 
-# from src.components.model_trainer import ModelTrainerConfig
-# from src.components.model_trainer import ModelTrainer
+
 @dataclass
 class DataIngestionConfig:
     faculty_data_path: str=os.path.join('artifacts',"faculty_raw.xlsx")
@@ -29,11 +28,11 @@ class DataIngestion:
             logging.info('Read the faculty dataset as dataframe')
 
             os.makedirs(os.path.dirname(self.ingestion_config.faculty_data_path),exist_ok=True)
-            df.to_excel(self.ingestion_config.faculty_data_path)
+            df.to_excel(self.ingestion_config.faculty_data_path,index=False)
 
             df2=pd.read_excel('notebook/data/address.xlsx')
             logging.info('Read the Address dataset as dataframe')
-            df2.to_excel(self.ingestion_config.address_data_path)
+            df2.to_excel(self.ingestion_config.address_data_path,index=False)
            
             logging.info("Data Ingestion is completed")
 

@@ -1,0 +1,96 @@
+<html>
+
+<body>
+    <div class="login">
+        <h2>Faculty recruitment</h2>
+        <link rel="stylesheet" href="">
+        <form action="{{ url_for('predict_datapoint')}}" method="post">
+            <div class="mb-3">
+                <label class="form-label">Gender</label>
+                <select class="form-control" name="gender" placeholder="Enter the Gender" required>
+                    <option class="placeholder" selected disabled value="">Select your Gender</option>
+                    <option value=0>
+                        Male
+                    </option>
+                    <option value=1>
+                        Female
+                    </option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Age</label>
+                <input class="form-control" type="number" name="age" placeholder="age" min='24' max='60' />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">TET Score out of 100</label>
+                <input class="form-control" type="number" name="TETscore" placeholder="Enter your TETscore" min='0'
+                    max='100' />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Experience</label>
+                <input class="form-control" type="number" name="experience" placeholder="Enter your experience" min='0'
+                    max='30' />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Level</label>
+                <input class="form-control" type="number" name="level" placeholder="Enter your experience" min='1' max='10' />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">subject</label>
+                <select class="form-control" name="subject" placeholder="Enter the subject" required>
+                    <option class="placeholder" selected disabled value="">Select subject</option>
+                    <option value="MATHS">
+                        maths
+                    </option>
+                    <option value="ENGLISH">
+                        english
+                    </option>
+                    <option value="SCIENCE">
+                        science
+                    </option>
+                    <option value="SOCIAL">
+                        social
+                    </option>
+                    <option value="TELUGU">
+                        telugu
+                    </option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">zone</label>
+                <select class="form-control" name="zone" placeholder="Enter the zone" required>
+                    <option class="placeholder" selected disabled value="">Select your zone</option>
+                    <option value=1>
+                        zone 1
+                    </option>
+                    <option value=2>
+                        zone 2
+                    </option>
+                    <option value=3>
+                        zone 3
+                    </option>
+                    <option value=4>
+                        zone 4
+                    </option>
+                    <option value=5>
+                        zone 5
+                    </option>
+                    </select>
+            </div>
+
+            <div class="mb-3">
+                <input class="btn btn-primary" type="submit" value="submit" required />
+            </div>
+        </form>
+        <h2>
+            THE prediction is {{results}}
+        </h2>
+
+        <body>
+
+</html>
