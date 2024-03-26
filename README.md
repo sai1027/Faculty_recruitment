@@ -33,8 +33,8 @@ This innovative solution tackles a challenge presented by the Ministry of Educat
 
 ## Demo
 
-https://youtu.be/14ON_KiYGAo?si=hnvEVOdPk58LotQi
 
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/14ON_KiYGAo/0.jpg)](https://www.youtube.com/watch?v=14ON_KiYGAo)
 
 
 
