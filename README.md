@@ -27,9 +27,7 @@ This innovative solution tackles a challenge presented by the Ministry of Educat
 ![App Screenshot](https://github.com/sai1027/Faculty_recruitment/blob/main/img/flowchart.png?raw=true)
 
 
-## Flow chart
 
-![App Screenshot](https://github.com/sai1027/Faculty_recruitment/blob/main/img/flowchart.png?raw=true)
 
 ## Demo
 
